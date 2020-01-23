@@ -44,7 +44,7 @@ section:nth-child(even) {
 /**************************** Navigation Bar **********************/
 
 .topnav {
-  background-color: #98d6dc;
+  background-color: #3483EC;
   overflow: hidden;
 }
 
@@ -61,14 +61,14 @@ section:nth-child(even) {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ffe373;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #f19261;
-  color: white;
+  background-color: rgb(255, 222, 75);
+  color: black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
