@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth
 }
 
 body {
@@ -7,7 +8,6 @@ body {
   sans-serif; 
   font-size: 20px;
   color: #444;
-  text-align: center;
   line-height: 1.5;
 }
 
@@ -29,11 +29,14 @@ nav {
 
 header {
   padding: 12% 0;
+  text-align: center ;
 }
 
 section {
+  display: flex;
+  text-align: center;
   min-height: 200px;
-  padding: 6% 0;
+  padding: 0;
   background-color: #bbb;
 }
 
@@ -41,12 +44,44 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+#charlesLogo{
+  height: auto;
+  width: 50%;
+}
+.projectImage{
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+h2{
+  writing-mode: vertical-lr;
+  background-color:rgba(52, 132, 236, 0.900) ;
+  padding:0px;
+  color: white;
+  font-size: 2em;
+  margin: 0px;
+  /* width: 20%;  
+  height: 100%; 
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0; */
+}
+.bioParagraph{
+  padding: 10px;
+  text-align: center;
+ }
+
 /**************************** Navigation Bar **********************/
 
 .topnav {
-  background-color: #3483EC;
+  background-color: rgba(52, 132, 236, 0.900);
   overflow: hidden;
 }
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -67,7 +102,7 @@ section:nth-child(even) {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(255, 222, 75);
+  background-color: rgba(255, 222, 75, 0.900);
   color: black;
 }
 
@@ -98,4 +133,10 @@ section:nth-child(even) {
     display: block;
     text-align: left;
   }
+}
+.topnav.responsive a.icon{
+  background-color: rgba(0, 0, 0, 0);
+}
+.topnav a.icon{
+  background-color: rgba(0, 0, 0, 0);
 }

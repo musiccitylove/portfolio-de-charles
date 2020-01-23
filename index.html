@@ -10,38 +10,42 @@
 <body>
     <nav role="navigation" class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
+        <a href="#bio">Bio</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
     <main role="main">
-        <header role="banner">
-            <h1>Good Morning! <br>Logo<br> This is Charles.  </h1>
+        <header role="banner" id='home'>
+            <h1>Good Morning! <br><img src="/images/ChaChaLogo.jpg" alt="Charles logo" id ='charlesLogo'><br> This is Charles.  </h1>
         </header>
 
-        <section>
-            Bio Vertical: Charles is a Full Stack Developer with a background in Design, Mixed Media, and Audio Engineering.
-
+        <section id='bio'>
+            <h2>Bio</h2>
+            <p id='bioParagraph'>Charles is a Full Stack Developer with a background in Design, Mixed Media, and Audio Engineering.</p>
         </section>
-        <section>
-            About Me Vertical: *Record Scratch* I bet you're wondering how I got here.
-        </section>
-        <section>
-            Section 2
-        </section>
-
-        
-
-        <section>
-            Project: Quiz App
+        <section id='about'>
+            <h2>About Me</h2>
+            <p id='aboutParagraph'>*Record Scratch* I bet you're wondering how I got here.</p>
         </section>
         
+        <section id='projects'>
+            <h2>Projects</h2>
+            <div>
+            <img src="/images/Screen Shot 2020-01-22 at 2.51.18 PM.png" class='projectImage'>
+            </div>
+        </section>
         
-        <section>
-            Contact: Contact Form
+        
+        <section id='contact'>
+            <h2>Contact</h2>
+            <button>Email Me</button>
+            <button>linkedIn</button>
+            <button>GitHub</button>
+            <button>Something</button>
         </section>
     </main>
     <footer role="content-info">Footer</footer>
