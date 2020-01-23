@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation" class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
     <main role="main">
         <header role="banner">
             <h1>Good Morning! <br>Logo<br> This is Charles.  </h1>
@@ -17,23 +26,25 @@
             Bio Vertical: Charles is a Full Stack Developer with a background in Design, Mixed Media, and Audio Engineering.
 
         </section>
-
+        <section>
+            About Me Vertical: *Record Scratch* I bet you're wondering how I got here.
+        </section>
         <section>
             Section 2
         </section>
 
-        <section>
-            Section 3
-        </section>
+        
 
         <section>
-            Project 3
+            Project: Quiz App
         </section>
         
+        
         <section>
-            About Me Vertical: *Record Scratch* I bet you're wondering how I got here.
+            Contact: Contact Form
         </section>
     </main>
     <footer role="content-info">Footer</footer>
+    <script type="text/javascript" src="index.js"></script> 
 </body>
 </html>
