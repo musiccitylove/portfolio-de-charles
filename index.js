@@ -25,6 +25,17 @@ function greeting(){
       greet + '<br><img src="/images/ChaChaLogo.jpg" alt="Charles logo" id ="charlesLogo"><br> This is Charles.';
 }
 
+function clickCounter(){
+  var button = document.getElementById('clickme'),
+    count = 0;
+  button.onclick = function() {
+    count += 1;
+    button.innerHTML = count;
+  };
+
+}
+
+clickCounter();
 greeting();
 
 
