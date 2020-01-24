@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/735704bbc2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav role="navigation" class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
-        <a href="#bio">Bio</a>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#bio" class="bio button">Bio</a>
+        <a href="#about" class="about button">About Me</a>
+        <a href="#projects" class="projects button">Projects</a>
+        <a href="#contact" class="contact button">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -23,29 +24,45 @@
             <h1>Good Morning! <br><img src="/images/ChaChaLogo.jpg" alt="Charles logo" id ='charlesLogo'><br> This is Charles.  </h1>
         </header>
 
-        <section id='bio'>
-            <h2>Bio</h2>
+        <section>
+            <h2 id='bio'>Bio</h2>
             <p id='bioParagraph'>Charles is a Full Stack Developer with a background in Design, Mixed Media, and Audio Engineering.</p>
         </section>
-        <section id='about'>
-            <h2>About Me</h2>
+        <section >
+            <h2 id='about'>About Me</h2>
             <p id='aboutParagraph'>*Record Scratch* I bet you're wondering how I got here.</p>
         </section>
         
-        <section id='projects'>
-            <h2>Projects</h2>
-            <div>
+        <section >
+            <h2 id='projects'>Projects</h2>
+            <div class='project-description'>
+            <p>Project description</p>
+            </div>
+            <div class='container'>   
             <img src="/images/Screen Shot 2020-01-22 at 2.51.18 PM.png" class='projectImage'>
+             <div class='btns' > 
+                <button class='btn'>Repo</button>
+                <button class='btn'>Live</button>
+             </div>
             </div>
         </section>
         
-        
-        <section id='contact'>
-            <h2>Contact</h2>
-            <button>Email Me</button>
-            <button>linkedIn</button>
-            <button>GitHub</button>
-            <button>Something</button>
+        <section >
+            <h2 id='contact'>Contact</h2>
+            <div id='icon-container'>
+                <button class='conicon'>
+                    <i class="far fa-envelope"></i>
+                </button> 
+                <button class='conicon'>
+                    <i class="fab fa-linkedin-in"></i>
+                </button> 
+                <button class='conicon'>
+                    <i class="fab fa-github"></i>
+                </button> 
+                <button class='conicon'>
+                    <i class="far fa-thumbs-up"></i>
+                </button> 
+            </div>
         </section>
     </main>
     <footer role="content-info">Footer</footer>

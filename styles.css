@@ -58,7 +58,7 @@ section:nth-child(even) {
 
 h2{
   writing-mode: vertical-lr;
-  background-color:rgba(52, 132, 236, 0.900) ;
+  /* background-color:rgba(52, 132, 236, 0.900) ; */
   padding:0px;
   color: white;
   font-size: 2em;
@@ -78,7 +78,7 @@ h2{
 /**************************** Navigation Bar **********************/
 
 .topnav {
-  background-color: rgba(52, 132, 236, 0.900);
+  background-color: #08183a;
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ h2{
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a.button:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
@@ -134,9 +134,91 @@ h2{
     text-align: left;
   }
 }
+
+/********************** Section and Button Colors ********************/
 .topnav.responsive a.icon{
+  color: black;
   background-color: rgba(0, 0, 0, 0);
 }
 .topnav a.icon{
+  color: white;
   background-color: rgba(0, 0, 0, 0);
+}
+.topnav a.bio{
+  background-color: #ebb553;
+}
+.topnav a.about{
+  background-color: #f19261;
+}
+.topnav a.projects{
+  background-color: #4b3d60;
+}
+.topnav a.contact{
+  background-color: #152852;
+}
+
+h2#bio{
+  background-color: #ebb553;
+}
+h2#about{
+  background-color: #f19261;
+}
+h2#projects{
+  background-color: #4b3d60;
+}
+h2#contact{
+  background-color: #152852;
+}
+
+/******************* Project buttons *****************/
+.container {
+  position: relative;
+  
+}
+.container .btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .btn {
+
+  display: inline;
+  width: 30%;
+  background-color: #4b3d60;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.container .btn:hover {
+  background-color: white;
+  color:#4b3d60;
+}
+.container .project-description{
+  display: block;
+}
+
+/******************* Contact buttons *****************/
+.conicon {
+  padding: 10px;
+  margin: 2px;
+  font-size: 30px;
+  width: 45%;
+  height:45% ;
+  text-align: center;
+  text-decoration: none;
+  background: #152852;
+  color: white;
+  
 }
