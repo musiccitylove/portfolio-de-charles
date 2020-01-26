@@ -22,7 +22,7 @@ function greeting(){
     greet = 'Good Evening!';
 
   document.getElementById('greeting').innerHTML =
-      greet + '<br><img src="/images/ChaChaLogo.jpg" alt="Charles logo" id ="charlesLogo"><br> This is Charles.';
+      greet + '<br><img src="images/ChaChaLogo.jpg" alt="Charles logo" id ="charlesLogo"><br> This is Charles.';
 }
 
 function clickCounter(){
